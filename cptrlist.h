@@ -65,6 +65,16 @@ ssize_t cptrlist_append(CPtrList *list, void *item);
 ssize_t cptrlist_insert_or_append(CPtrList *list, void *item);
 
 /**
+ * @brief Find an item in the list by value using the provided
+ * search function.
+ * @return The index of the member with the same value or < 0 on error.
+ */
+ssize_t cptrlist_find(
+	CPtrList *list,
+	void *search,
+	bool (*search_func)(void *, void *));
+
+/**
  * @brief Calls free on the item at given index and sets the slot to NULL.
  */
 void cptrlist_free_at(CPtrList *list, size_t index);
