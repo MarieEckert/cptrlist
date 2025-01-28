@@ -1,0 +1,6 @@
+cp(oin)t(e)rlist
+
+A simple implementation of a pointer-list with insertion and removal
+functions that I intended to reuse every so often.
+
+Licensed under the ISC license, see the LICENSE file for details.
